@@ -18,5 +18,17 @@ Alat CLI Python untuk mengambil subtitle (manual dan otomatis) dari video YouTub
 
 ### 1. Clone repositori
 ```bash
-git clone https://github.com/nama-kamu/youtube-subtitle-downloader.git
+git clone https://github.com/Gopartner/youtube_subtitle_downloader.git
 cd youtube-subtitle-downloader
+```
+## struktur project
+```bash
+youtube_subtitle_downloader/
+│
+├── main.py
+├── utils/
+│   ├── __init__.py
+│   ├── video.py         # untuk ekstraksi ID dan daftar subtitle
+│   ├── subtitle.py      # untuk pengambilan dan penyimpanan subtitle
+
+```
