@@ -1,0 +1,848 @@
+Halo teman-teman semua, kembali lagi di
+channel WPU bersama saya Sandika Gali.
+Dan di video kali ini kembali kita akan
+mengintip fitur-fitur baru yang
+ditawarkan oleh CSS yang sudah dirangkum
+oleh teman-teman dari Google di CSS web
+2024. Ini adalah bagian ketiga dari seri
+mengenai CSS Wap 2024 ini. Setelah di
+video pertama kita bahas mengenai
+komponen-komponen baru apa aja yang ada
+di dalam CSS saat ini, terus juga di
+video kedua kita punya interaksi baru
+yang bisa kita pakai di dalam CSS yang
+juga keren-keren banget. Dan saat ini
+nih di bagian ketiga kita akan bahas
+mengenai developer experience ya.
+Bagaimana fitur-fitur baru yang ada di
+CSS ini memudahkan hidup kita sebagai
+seorang web developer atau UI designer.
+atau front end developer pokoknya yang
+berhubungan dengan tampilan menggunakan
+CSS. Saya yakin teman-teman pasti suka
+juga ya. Jadi buat teman-teman yang
+belum nonton video pertama dan kedua,
+silakan teman-teman kunjungin dulu.
+Nanti linknya saya simpan di deskripsi
+video atau di dalam card di video ini ya
+teman-teman ya. Oke ya teman-teman ya.
+Jadi tanpa berlama-lama lagi kita akan
+coba masuk ke beberapa fiturnya karena
+cukup banyak nih kita harus cobain satu
+persatu ya. Jadi siapin kode editornya
+kita bakalan ngoding bareng-bareng. Oke
+sekarang kita kembali masuk dulu ke
+website-nya teman-teman ya. CSSP 2024.
+Sekali lagi link ada di dalam deskripsi
+biar kita bisa kunjungi bareng-bareng.
+Kita lihat dulu dari awal lagi ya. Jadi
+di awal kita disediakan sebuah website
+ini menggunakan teknologi-teknologi yang
+ada di sini ya. Jadi kalau kita scroll
+tuh ada animasinya. Ini keren banget.
+Ada videonya juga teman-teman bisa cek.
+Silakan nanti diplay aja video mengenai
+recap fitur-fitur yang akan kita pakai
+di seri ini ya. Nah terus ada
+penjelasannya ini udah kita bahas di
+video pertama tuh lihat ada si Dinonya
+meluncur menggunakan skateboard ya. Kita
+scroll. Nah, sekarang di sini kita punya
+katanya ada beberapa hal ya. Yang
+pertama lima komponen udah kita bahas.
+Terus yang kedua ada empat interaksi
+udah kita bahas juga. Nah, dan sekarang
+kita punya delapan developer experience
+features atau fitur-fitur yang bikin
+experience kita sebagai seorang
+developer itu dimudahkan. Ya, walaupun
+ini kita enggak akan bahas kedelapan
+fiturnya karena ada beberapa yang
+rasanya di luar dari scope kita ya.
+mungkin itu terlalu advance atau nanti
+ada yang hanya bisa diterapkan di bahasa
+tertentu gitu ya, bukan bahasa Latin.
+Kita kan kalau orang Indonesia tuh
+nulisnya pakai bahasa Latin. Kalau ini
+menggunakan huruf-huruf tertentu seperti
+Cina, Korea, Jepang itu baru kepakai.
+Tapi nanti kita lihat ya. Kita langsung
+masuk aja ke bagian developer experience
+ya teman-teman. Scroll ke bawah ini ada
+bagian developer experience. Yuk kita
+kunjungi dulu. Lihat nih ada delapan ya.
+Ada delapan atau kita baca dulu
+penjelasannya ya. Ini harus diroll.
+Kalau mau baca penjelasannya kita
+scroll.
+Nah, ini developer experience gitu ya.
+Ini katanya hal-hal menjadi lebih mudah
+setelah kita bertualang gitu ya,
+menjelajahi lautan katanya ya. Kalau
+kita sudah mengarungi lautan itu
+kayaknya kesulitan-kesulitan tuh sudah
+berhasil kita tangani katanya gitu
+ceritanya. Nah, di sini kita menemukan
+ada yang namanya backdrop inheritance,
+ada light dark, ada property, ada
+starting style, pop over ya, Ruby
+alignment, texstoke, dan juga CSS
+nesting. Seru semua teman-teman ya. Kita
+bahas satu-satu ya. Nih yang pertama ada
+yang namanya backdrop inheritance.
+Backdrop inheritance ini sesuai dengan
+namanya inheritance itu kan pewarisan
+ya. Jadi perilaku apa yang diwarisi oleh
+sebuah sudo elemen backdrop. Ini mungkin
+teman-teman udah ada yang tahu atau
+belum mengenai properti backdrop ini ya.
+Terusang saya juga baru tahu ya. Bahkan
+sebelum kita masuk ke properti backdrop
+nanti kita akan bahas dulu topik yang
+lain ya. Nih backdrop itu adalah ketika
+kita misalnya menggunakan sebuah
+komponen dialog atau dialog nih kayak
+gini ya. Jadi kalau misalkan diklik
+keluar dialog seperti ini. Nah,
+backdrop-nya itu adalah bagian yang
+mengelilingi elemen atau komponen dialog
+kita. Jadi, Teman-teman pasti sering
+lihat lah ya. Kita ngeklik sesuatu terus
+ada elemen yang kebuka terus di
+sekitarnya tuh warna gelap transparan
+atau warna hitam gitu ya. Menutupi
+elemen yang ada di belakangnya. Nah, itu
+namanya backdrop. Supaya kita fokusnya
+ke elemen yang munculnya aja atau bahkan
+ada yang bikinnya dia ngeblur gitu
+sisinya. Itu namanya backdrop. Ya, coba
+kita tesnya pakai kode kita ya. Ini saya
+sudah bikin beberapa kode yang
+teman-teman nanti bisa ikutin lewat
+repository GitHub yang ada di deskripsi.
+Tapi sebetulnya ini saya mengadopsi
+semua kode dari sini. Jadi kalau
+teman-teman mau cek kodenya yang ada di
+dalam website-nya silakan, tapi kalau
+mau menggunakan website yang kita bikin
+nanti bareng-bareng juga silakan ya.
+Saya udah punya ini masih di repository
+yang lama kalau teman-teman ngikutin ya.
+Kita mulai dari backdrop inheritance
+dulu ya. Kita buka HTML-nya. Nanti kita
+buka CSS dan JavaScript-nya sedikit ya.
+Jadi ceritanya gini, buat teman-teman
+yang belum tahu, sebelum kita masuk ke
+backdrop, saat ini di HTML itu ada
+properti yang namanya dialog. Ya,
+mungkin ada beberapa dari teman-teman
+yang belum tahu nih. Ini keren banget.
+Jadi dialog ini adalah properti yang
+udah bisa digunakan di HTML, udah
+di-support yang nantinya memunculkan
+kotak seperti tadi ya. Jelas kotaknya
+nanti bisa kita styling ya. Nah, tapi
+untuk menjalankan si dialognya kita
+butuh JavaScript untuk memunculkan dan
+menghilangkan dialognya. Tapi cuman satu
+baris JavaScript-nya. Jadi teman-teman
+enggak usah khawatir. Kita lihat
+JavaScript-nya ya. Saya bikin
+sebelah-sebelahan dulu nih. Jadi, saya
+punya dialog dan saya punya tombol di
+dalam dialognya. Tombolnya harus kita
+simpan ke dalam sebuah form karena kalau
+enggak ini enggak akan jalan. Jadi, kita
+simpan tombolnya di dalam sebuah form.
+Formnya kita simpan di dalam dialognya
+sebagai child element. Nah, nanti kita
+tinggal panggil pakai DOM ya, seleksi
+DOM, ambil tombolnya lalu kita kasih
+event click. Oke, terus nanti di
+dalamnya kita tinggal panggil elemen
+dialognya dan kita panggil methode-nya
+namanya show modal. Jadi otomatis
+sekarang kita punya methode baru untuk
+si komponen dialog ini namanya show
+modal. Ini akan otomatis memunculkan dan
+menghilangkan dialognya hanya dengan
+satu baris ini aja. Keren banget ini
+menurut saya, Teman-teman. Nah, sekarang
+tinggal kita styling si dialognya. Coba
+ya kita buka dulu style-nya nih,
+Teman-teman. Sekarang lihat style-nya.
+Kita punya dialog yang saya kasih
+style-nya di bawah sini ya. Nah, yang
+dialognya saya kasih style ini
+menggunakan custom property CSS ya,
+kayak variabel gitu yang warna bordernya
+ini dan warna backdrop-nya. Nah, bahkan
+saya juga baru tahu nih sekarang kita
+bisa ngasih alfa atau transparansi di
+dua digit terakhir dari warna h kita ya.
+Jadi kalau misalkan saya kasih angka 33
+di akhir 6 digit dari warna heks kita
+ini artinya transparan sebesar 33%.
+Keren ya. Oke, sekarang kita lihat dulu
+hasilnya. Ini kita preview nih. Jadi
+saya punya tombol tombolnya yang ini ya.
+nih buttonnya yang ini. Oke, kalau kita
+klik terus dia langsung tampil tuh si
+dialognya dan itu otomatis kalau kita
+klik tombol tutup itu juga langsung
+hilang tombol yang ada di dalam si
+dialognya ya. Tuh. Nah, itu untuk baru
+untuk dialog ya dan ini udah bisa kita
+pakai sebelum adanya CSS WP ini. Nah,
+topik dari CSS WP adalah Pudo Elemen
+Backdrop nih. Jadi, kita bisa kasih
+titik 2.2 backdrop ke elemen display
+kita. sebelumnya katanya ya elemen ini
+tuh berdiri sendiri dia tidak mewarisi
+nilai CSS dari elemen manapun. Sekarang
+di Chrome versi 122 backdrop itu sudah
+dikonversi ke dalam DOM Tree elemen
+pembungkusnya. Artinya dia mewarisi
+semua properti dari elemen yang
+membungkusnya atau memanggilnya gitu.
+Jadi kalau misalkan kita panggil begini
+titik 2.2 backdrop, maka apapun nilai
+yang kita kasih di dalamnya itu bisa
+ngambil dari elemen yang memanggilnya.
+Nah, karena dialog itu adalah elemen
+yang memanggilnya, pada saat kita
+menggunakan custom property backdrop
+color, dia akan ngambil ke sini.
+Sebelumnya enggak bisa, ya. Jadi kalian
+dapat dua hal nih, dapat dua ilmu nih.
+Menggunakan dialog itu bisa dilakukan
+pakai JavaScript baris plus kalian jadi
+tahu sekarang menggunakan titik 2.2
+backdrop bisa pakai custom property yang
+ngambil nilai dari parent-nya lah
+istilahnya atau pemanggilnya. Sebelumnya
+ini harus kita tulisnya manual sehingga
+kalau misalkan teman-teman nanti
+bikinnya pakai komponen gitu ya, pakai
+framework ini harus dideklarasi dua
+kali. Tapi sekarang ini bisa nanti
+kalian jadikan sebagai variabel.
+Manggilnya cukup sekali ya. Jadi tadinya
+begini ya. Terus sama aja ini backdrop
+tuh yang warna ungu muda ini ya.
+Sekarang kita bisa pakai variabel yang
+ngambil dari custom property. Itu dia.
+Itu yang pertama. Jadi menggunakan sudo
+elemen titik2.2 backdrop untuk mengelola
+atau mengambil nilai dari yang
+mewarisinya. Lumayan keren ya. Backdrop
+inheritance. Pewarisan pada backdrop.
+Lanjut ke yang bagian kedua. Ini enggak
+kalah keren, Teman-teman. Ada sebuah
+fungsi di dalam CSS yang namanya light
+dash dark. Nah, ini keren banget nih.
+Ini untuk melakukan fitur light mode
+dark mode lah ya. Yang dia akan
+menyesuaikan apakah kita menggunakan
+light mode dark mode dari sistem operasi
+kita atau nanti kita mau bikin sendiri
+fitur light mode dark mode-nya. Kita
+coba ya. Ini kita close dulu. Sekarang
+kita ke contoh yang kedua. Teman-teman
+bisa buka aja folder 2 light dark ya.
+Kita mulai dari buka HTML-nya dulu ya.
+Nih, jadi ceritanya simpel aja nih.
+Kalau kita preview, saya punya sebuah
+combo box yang bisa milih light atau
+dark. Di bawahnya ada kotak yang berisi
+tulisan yang ada background berwarna
+putih. Ini kalau saya pindahin dari
+light ke dark, maka dia akan mengganti
+background dari kotaknya jadi hitam. Ya,
+sebenarnya simpel. Ini kayak kalian ubah
+light mode, dark mode. Tapi teman-teman
+lihat sekarang background halamannya itu
+warna hitam. Kenapa warna hitam? Karena
+saya di sistem operasinya lagi pakai
+dark mode. Coba kalau sekarang saya ubah
+nih ya. Ini sistem operasi saya. Saya
+pakai Windows. Saya buka bagian
+personalization terus colors. Sekarang
+saya ganti jadi light nih. Kan jadi
+terang tuh ya walaupun silau. Tapi kalau
+saya sekarang balik lagi. Lihat ini
+otomatis jadi warna putih karena dia
+ngambil light mode. Sekarang udah tahu
+sistem operasi kita lagi pakai light
+mode. Background-nya ini otomatis. yang
+combo box-nya ini manual saya
+ganti-ganti, kelihatannya enggak aneh
+dan ini gampang banget kita lakukan
+menggunakan framework misalnya atau
+pakai JavaScript, tapi ini full CSS.
+Kita balikin ke dark mode dah, kita
+close. Jadi hitem lagi. Sekarang kita
+lihat gimana cara bikinnya. HTML-nya
+hanya gini aja, enggak ada JavaScript
+sama sekali. Sekarang kita lihat
+CSS-nya. Oke, kita lihat ini styling
+biasa ya. Kita bisa abaikan. Kita fokus
+di bagian ini aja nih. Sekarang kita
+punya sebuah properti CSS yang namanya
+color dash schem. Oke, yang isinya kita
+bisa kasih dua nilai, light, spasi,
+dark, ya. Jadi, ini harus kita panggil
+dulu ini untuk mengubah si bagian
+HTML-nya bahwa di dalam HTML sekarang
+saya bisa menggunakan skema warna. Oke.
+Nah, sekarang kita fokus dulu untuk yang
+body, ya. Gimana cara saya mengubah
+background jadi hitam terus tulisan jadi
+putih. Karena kalau saya balikin lagi ke
+dark mode eh ke light mode ya. Kalau
+teman-teman tadi ngeh ya, saya ketik
+dark masuk ke sini saya ganti jadi
+light. Background-nya jadi putih,
+tulisannya jadi hitam. Jadi nge-switch
+gitu kan ya. Ini abaikan dulu yang kotak
+di dalamnya. Ya. Dah saya balikin lagi.
+Kenapa itu bisa terjadi? Karena satu
+saya pakai ini. Ini harus jalan dulu,
+harus dibikin dulu. Terus yang kedua,
+lihat nih di dalam bodinya. Sekarang
+untuk warna tulisan saya bisa kasih
+nilainya begini. Ini keren banget nih.
+Light dash dark kita panggil sebagai
+fungsi ini ya. Light dark nih. Light
+dark isinya dua nilai. Kalau lagi light
+tulisannya mau warna apa? Kalau lagi
+dark tulisannya mau warna apa? Coba
+tanpa Java scrip sama sekali. Untuk
+background kebalikannya kalau lagi light
+warnanya abu-abu muda. Kalau lagi dark
+warnanya hitam. Ini udah langsung
+connect ke sistem operasi kita. Jadi dia
+tahu kalau dark mode pakai yang mana,
+kalau light mode pakai yang mana. Mantap
+ya. Nah, tapi kan kita pengin juga
+ngubah sendiri gitu ya. Kita lagi pakai
+light mode sistem operasinya tapi
+website-nya pengin dark mode. Nah, kalau
+gitu kita pakai CSS yang ini nih. Gitu.
+Jadi kalau di dalam body itu ada kita
+pakai hash ya, kita udah bahas has ya di
+video sebelumnya. Kalau di dalam body
+itu ada elemen yang punya ID color
+schem. Berarti ini ya nih nih ya ada ID
+color scheme. Berarti dia ngecek ke
+bagian select-nya. Kalau combo box-nya
+dipilih light, maka elemen demo di
+dalamnya pakai skema warna light. Jadi,
+ini mah langsung dipaksa jadi light. Gak
+peduli sistem operasi kita lagi pilihnya
+apa gitu. Kalau ini ngambilnya dari
+sistem operasi, kalian nulisnya light
+dark, tulis dua-duanya. Kebalikannya,
+kalau saya pilih dark, klik dark, maka
+elemen demo di dalamnya pakai color
+scheme yang dark. Nah, ini nyambungnya
+ke mana nih? Ini nyambungnya ke sini.
+Nah, saya punya. Jadi, light dark di
+sini bukan lagi ngambil dari sistem
+operasi, tapi ngambil dari hasil pilihan
+select kita. Mantap, ya. Jadi, kita bisa
+ganti manual ini. Select-nya kalian bisa
+ganti jadi toggle. Bisa diklik kiri
+kanan gitu bisa. Mau pakai checkbox
+bisa. Atau pakai radio button juga bisa.
+Ya, pokoknya ada dua. Bisa ngecek ke
+sistem operasi, bisa kita bajak gitu
+saya istilahnya ya. Diubah manual.
+Intinya fungsi yang ini ngubahnya. Kalau
+light mode mau apa, kalau dark mode mau
+apa. Keren banget ya. Itu dia. Jadi
+kalau kalian mau bikin light mode, dark
+mode, tapi simpel aja pakai CSS, gak
+pakai framework seperti tailwin ya. Kan
+di tailwin juga ada ya menu dark mode
+itu kita harus panggil tailwin-nya. Tapi
+kalau mau simpel kayak gini enggak perlu
+narik tailwin, langsung aja pakai light
+dash dark. Itu dia. Nomor dua tidak
+kalah mantap yaitu light dark. Next kita
+ke nomor 3. Kita punya add property.
+Sebenarnya ini udah agak lama tapi
+katanya di 2024 ini akhirnya dia
+baseline. Baseline itu artinya apa?
+Semua browser support. Jadi kalian
+sekarang udah bisa pakai ini di
+production. Apa itu property? Kita bisa
+bikin custom property. Ya, nih kita bisa
+bikin custom property. Beda dengan
+custom variable. Custom property. Kita
+bisa kasih juga type-nya. Jadi, kayak
+type script ini ya, bisa ada type-nya.
+Jadi, kita bisa kasih tahu bahwa
+properti ini nilai awalnya apa, terus
+tipenya apa, apakah dia mau mewarisi
+elemen parent-nya atau tidak, kita juga
+bisa kasih. Jadi ini tiga ini bisa kita
+kasih ke dalam propertinya kayak objek
+ya. Kalau di JavaScript tuh kayak objek
+nih. Mantap. Makin lama CSS semakin
+seperti bahasa pemrograman yang full
+gitu ya. Nah, kerennya apa? Kerennya
+kita jadi bisa mengatur nilai khususnya
+nilainya numerik ya yang ada angkanya
+panjang, lebar, sudut, margin, padding.
+Untuk tujuan animasi ini keren banget ya
+teman-teman ya. Kita ambil contoh ya.
+Kita kembali lagi ke coding-nya. Nah,
+ini kita close. Sekarang kita masuk ke
+bagian properti. Nah, untuk properti ini
+saya punya kasusnya adalah kita bikin
+animasi ya. Jadi, saya punya sebuah div.
+DIV aja kayak gini, tapi div-nya saya
+bikin kotak nih. Jadi, lebarnya 50 V-,
+tingginya 50 V- juga. Bordernya solid,
+ya. Nih. Jadi, misalnya saya matikan
+dulu border image-nya. Ini saya kasih
+black aja gitu ya. Nah, nanti ini kalau
+kita jalanin supaya kelihatan dulu
+awalnya seperti apa. Nah, ini jadi ada
+kotak yang kita kasih bordernya tebal 10
+solid black. Oke. Nah, ini saya matikan
+dulu deh animasinya biar kelihatannya
+keren. Nah, sekarang saya enggak mau
+warnanya hitam. Oke, saya mau pakai yang
+namanya gradien. Ya, kalau pakai gradien
+kita bisa kasih border
+image. Ingat ya, kan kalau mau simpel
+kita bisa bikin gini ya, border image.
+Terus kita kasih linear gradien. Ini
+saya ganti dulu. Jadi
+CSS linear gradien ya. Misalnya dari
+biru ke merah. Nah, ini kan jadinya di
+sudutnya aja ya. Kalau saya pengin kotak
+gitu ya, saya kasih angka satu setelah
+image-nya. Nah, ini dari atas ke bawah.
+Nah, otomatisnya dia vertikal dari atas
+ke bawah. Kalau misalkan mau serong bisa
+ya. Tu misalkan bottom right, jadi kanan
+bawah kita kasih koma. Birunya di sini,
+merahnya kanan bawah kan gitu ya. Nah,
+tapi sekarang saya mau bikin dia muter.
+Nah, ini bagus banget nih. Kita bisa
+pakai yang namanya conic gradient. Conic
+gradient itu kayak kerucut di tengah.
+Jadi, kalau misalkan saya kasih di sini
+yang ini ya, border image ini saya
+hapus. Nah, jadi dia, nah, sebenarnya
+ini bukan transisi dari pink ke merah ke
+kuningnya itu kotak, tapi dia tuh
+kerucut. Kalau misalkan saya ganti nih
+border image-nya jadi background image,
+ya. Background
+image. Nah, gini. Tapi angka satunya
+saya hapus ya. Karena kalau background
+image enggak perlu pakai angka satu di
+sini. Nah, harusnya begini tuh. Jadi dia
+tuh kerucut sebenarnya ya. Kalau kita
+simpan ke border, saya kasih satu ini
+ganti jadi
+border. Nah, seperti ini dah. Sebenarnya
+gini aja udah oke. Saya pengen bikin dia
+muter. Nah, kita bisa pakai yang namanya
+angle nih. Sebenarnya ini ada angle ya.
+Nah, itu kan tadi baru warnanya,
+Teman-teman. Nah, kalau Teman-teman
+lihat di sini ada from. From itu kalau
+linear gradien kan arahnya ke mana gitu.
+Nah, sekarang kalau untuk conik itu kita
+bisa kasih derajat di sini. Jadi, kita
+misalnya kasih 90 dg nih ya. Mulainya
+dari merah kan harusnya ya. Tadi mulai
+dari merah, sekarang mulai dari biru.
+Nah, kalau kita geser lagi
+92 9
+5 lihat bergeser terus ya
+100. Jadi muter terus warnanya. Nah,
+warna ini mau kita bikin ada animasinya.
+Gimana caranya? Nah, jadi kita balikin
+lagi jadi sebuah variabel. Ini dapat
+angle dari mana? Ini kita bikin sendiri,
+Teman-teman. Nah, ngambilnya dari sini.
+Jadi, si variabel angle awalnya tuh 0
+derajat. Oke, mulai dari pink tuh. Terus
+kita mau rotasi sampai ke 360 derajat.
+Nah, ini bisa terjadi karena kita bikin
+initial value-nya di sini 0 derajat
+pakai custom property. Kalau enggak
+pakai custom property, enggak mau
+dikalkulasi secara matematik. Dia enggak
+mau nambahin otomatis. Sehingga lihat
+nih, begitu kita kasih
+animasi tuh jalan ya. Animasi 10 detik.
+Rotate. Rotate ini nama animasinya yang
+kita bikin di dalam keyframes. Namanya
+boleh apapun ya, muter gitu boleh ya.
+Kita ganti jadi muter asal ini ganti
+jadi apa?
+Muter
+gitu. Linear. Linear ini kecepatannya
+konstan enggak makin ngebut, enggak
+makin pelan. Infinite dia akan muter
+terus-terusan ya. Jadi cara pakai dari
+si custom property salah satunya seperti
+itu. Jadi kalian bisa bikin sendiri
+custom property-nya apa. Selalu kasih
+minus-minus di depannya. Terus ada tiga
+yang biasanya diisi. Ini tipenya apa,
+nilai awalnya mau berapa supaya bisa
+dianimasiin tadi ya. Mau piksel boleh,
+mau angka aja boleh, misalkan opacity ya
+enggak usah pakai satuan boleh, terus
+mau mewarisi nilai sebelumnya atau
+pembungkusnya atau tidak. Oke, sip. Itu
+untuk custom property ya. Next, kita
+punya Pop over API. Nah, ini lebih keren
+lagi ya. Mirip sama dialog kita tadi.
+Cuma ini lebih gampang lagi makainya
+teman-teman. Kita tinggal bikin sebuah
+elemen yang punya atribut popover. Lalu,
+dia perilakunya akan berubah menjadi
+sebuah popover. Tinggal triggernya kita
+bikin pakai tombol yang punya target ke
+elemen yang kita kasih ID. Jadi, udah
+dikasih atribut popover kasih ID. Kita
+coba. Ini keren banget sih, Teman-teman.
+Biasanya saya bikin ini pakai JavaScript
+dan lumayan ya manipulasi DOM gak susah
+sih, cuman tetap aja JavaScript dan
+beberapa baris gitu. Nih, saya buka dulu
+HTML dan CSS-nya. Lihat, saya punya
+tombol, saya punya elemen yang akan saya
+jadikan sebagai popover. Coba pop
+over-nya kita hapus dulu ya. Ini pop
+over-nya kita hapus. Kita lihat hasilnya
+nih. Jadi saya punya tombol dan di
+bawahnya ada elemennya. Kalau kita kasih
+pop elemen itu langsung hilang. Gini aja
+tuh elemennya langsung hilang. Dan kalau
+tombol yang kita punya ini udah ada
+atribut pop over target yang mengacu ke
+ID-nya nih. Jadi nyambung kalian harus
+bikinnya sama ya. Sekarang lihat nih
+kalau diklik tuh otomatis ini kebuka
+ketutup. Ini kenapa jadi warna hitam?
+Karena kita styling teman-teman ya. Cara
+ng-estyling-nya gini. Kita kasih kurung
+siku. Jadi pop over mau dikasih warna
+apa, mau dikasih apa, tuh. Jadi ini
+bagus banget dan kerennya kalau diklik
+dia ngebuka, klik di sembarang di tempat
+mana pun hilang. Itu juga perilaku
+simpel itu. Kalau pakai JavaScript
+nambah baris lagi ya, di mana kita
+ngeklik di luar dari elemennya. Nah,
+sekarang mau diklik di mana pun hilang
+dia. Kecuali di popover-nya. Siapa tuh?
+Kan mau ngeblok apa gitu ya. Atau tekan
+escape. Nah, itu juga nambah baris
+JavaScript ya. Tuh, tekan escape
+hilang. Bahkan kita bisa kasih animasi.
+Dan ini akan nyambung ke topik
+berikutnya ya. Gimana cara ngasih
+animasinya? Nah, ini kita lihat ya. Ini
+saya gedein dulu nih. Cara ngasih
+animasinya kita tinggal panggil si pop
+over-nya gini. Terus kita kasih titik du
+pop over open. Ini state pada
+saat si pop over-nya kebuka. Nah, kita
+kasih base-nya dulu ya. Biasanya kita
+kasih translate. Kalau mau saya bikin
+bergerak ke atas ngilang gitu ya.
+0,0. Jadi diam di sini tuh
+0,0 ya. Nah, sekarang kalau saya klik di
+luar, saya pengin dia kabur ke atas.
+Jadi, saya tambahkan. Kalian boleh
+tambahinnya di
+sini ya. Kita kasih transition gini.
+Caranya kita balikin ke atas kita kasih
+secara sumbu vertikalnya minus berapa
+rem gitu ya. Jadi kita kasih translate.
+Oh, translate dulu ya. Kita kasih
+translate dulu baru transition aja.
+translate ini enggak usah pakai
+transform lagi bahkan ya kita langsung
+translate juga bisa 0 terus minus berapa
+misalnya 22 rem. Nah, jadi sekarang
+sebetulnya dia udah enggak cuman ngilang
+tapi ngumpet ke atas tapi kan kita butuh
+animasi ya. Kita butuh animasi berarti
+kita pakai transition. Ada dua nih yang
+harus teman-teman transition ini.
+Ingat-ingat
+nih. Pertama kita butuh animasiin si
+translate-nya. Jadi kalian bisa tulis
+gini si translate-nya itu saya mau bikin
+misalnya berapa 1 detik gitu ya 1 detik.
+Terus kecepatannya is out. Makin makin
+cepat pas ngilangnya ya. Is out. Nah
+kalau gini aja enggak akan hilang eh
+enggak akan enggak akan ada animasinya
+ya. Kenapa? Karena pada saat diklik dia
+tuh
+display-nya block terus diklik lagi
+display-nya non. Jadi belum keburu geser
+ke atas udah ngilang dulu. Nah, makanya
+kita pengin bikin si display-nya ada
+transisinya juga. Nah, ini keren nih.
+Kita bisa kasih
+display 1 detik juga. Terus kita kasih
+is out. Nah, tapi problemnya adalah
+enggak bisa tuh. Kenapa? Karena display
+itu sebetulnya enggak bisa kita
+transisiin karena dia enggak punya nilai
+angkanya. Kan kalau jarak mah ada
+angkanya ya. Jarak ukuran. Begitu kita
+translate, dia akan menghitung secara
+operasi matematik ditambah satu,
+ditambah 1 sampai ngilang gitu. Nah,
+kalau display enggak bisa. Tapi karena
+perilaku si pop over ini display, nah
+kita harus kasih gini, allow
+discret. Nah, jadi sebuah elemen yang
+enggak punya nilai angka gitu ya akan
+dibikin jadi punya gitu ya. Sekarang
+kita coba klik. Oh, belum ada. Oh, tipo,
+teman-teman. Harusnya nulisnya
+discrete ya begini. Nah, lihat sekarang
+kalau diklik langsung muncul karena itu
+ada yang harus kita benerin. Tapi lihat
+kalau saya
+hilangin sekarang ini udah aman. Cuma
+problemnya nih pas awal aja nih nanti
+kita benerin. Lihat. Jadi sekarang kita
+bisa bikin animasi keren seperti ini ya.
+Enggak ada JavaScript-nya sama
+sekali. Nah, untuk bikin yang awal kita
+butuh sesuatu yang namanya starting
+style.
+ini untuk ngasih style sebelum elemennya
+muncul. Nah, ini yang akan kita bahas di
+topik berikutnya sebetulnya. Caranya
+kita kasih sebuah add rule ya, namanya
+di JavaScript pada add-nya
+starting style begini. Untuk siapa kita
+kasihnya? Kita kasih untuk si pop over.
+Pop over saat dia open. Pop over open.
+Nah, kan kalau ini adalah keadaan awal
+ini bahkan sebelum elemennya muncul ke
+layar. Nah, ini kita kasih translate
+lagi. Jadi, sekarang datangnya dari atas
+ngilang dulu dia menuju ke sini. Karena
+kita udah kasih transition, maka
+harusnya dia masuk. Set
+tuh mantap ya. Jadi, kita bisa kasih
+starting style. Dia datang ke sini terus
+dia
+ngilang ke keadaan akhirnya. Ingat
+teman-teman pakai allow discrete untuk
+display. Kalau dirasa kurang, terlalu
+lambat ya. Kita misalkan 0,5 gitu ya,
+0,5 biar agak
+ngebut. Set. Set. Nah, gitu ya. Mantap.
+Itu dia pop over API. Next adalah
+starting style. Ya tadi ya kita udah
+coba sebetulnya untuk bikin supaya kita
+bisa ngasih style bahkan sebelum
+elemennya ada. Saya punya contoh satu
+lagi berdasarkan yang ada di website-nya
+ya. Jadi nih kita punya sebuah HTML
+simpel aja. Saya punya tombol dan saya
+punya elemen main. Saya penginnya gini.
+Kalau saya ngeklik tombol muncul kotak
+baru di dalam main. Ya, gampang aja.
+Kita lihat dulu CSS-nya ya. Saya punya
+dif-nya untuk si kotak barunya. Nanti
+muncul bentuknya kotak. Nah, jadi
+ukurannya 2 * 2. Terus ada bordernya
+warna abu-abu ya. Kotaknya warnanya
+putih. Enggak ada enggak ada warnanya,
+transparan. Nah, kita coba jalanin dulu
+ya. Nah, sekarang kita lihat dulu
+JavaScript-nya ya. Nah, JavaScript-nya
+sebenarnya simpel aja. Kalau tombol
+diklik kan kita cobain dulu deh. Nih,
+saya punya tombol. Kalau tombol diklik
+saya mau bikin div terus div-nya masukin
+ke dalam main. Ya itu mah gampang ya.
+Jadi kalau tombol diklik bikin div baru
+pakai create elemen. Terus elemen tadi
+masukin diappend ke dalam main. Jadi
+kalau saya klik nambah tuh ya. Ini
+enggak aneh. Refresh dulu. Sekarang saya
+pengen bikin supaya pas dia muncul ada
+transisi warnanya. Nah, kan sebenarnya
+kalau misalkan kita pakai warna di sini
+misalkan saya kasih salmon gitu ya, dia
+langsung ada warnanya kan. Tapi saya
+penginnya dari transparan dulu terus ada
+warnanya. Nah, gimana caranya? Kita
+balikin lagi
+transparent. Caranya gampang banget ya.
+Kita tinggal nesting aja di sini kita
+kasih tahu bahwa elemen div ini punya
+starting style gitu ya. Bisa kalian
+tulis di luar starting style div gini.
+Tapi kalau misalkan kita simpan di
+dalamnya ini enggak perlu dan otomatis
+dia tahu nesting ya di ini punya
+starting style. Apa starting style-nya?
+Background color-nya salmon. Nah, kita
+udah punya transition-nya di sini nih.
+Nah, jadi pada saat tombolnya diklik
+dari yang awalnya salmon berubah jadi
+transparent atau kalau mau dibalik juga
+bisa ya. Nanti kalau kita klik lihat nih
+salmon dulu jadi transparent. Salmon
+dulu jadi transparan atau mau dibalik
+salmonnya di
+sini transparennya di sini.
+Jadi awalnya
+kosong tuh berubah jadi warna yang ada
+di sini. Keren ya. Kita ngasih sebuah
+style bahkan sebelum elemennya ada di
+dalam atau di gambar di dalam dokumen
+kita. Sip. Mantap. Nah, berikutnya ada
+yang namanya Ruby Align. Nah, ini
+kayaknya enggak akan kita pakai karena
+ini kepakai kalau kita punya font atau
+huruf seperti huruf Cina, Jepang, Korea
+gitu ya. Karena biasanya di atas
+tulisannya ada keterangannya. Nah, kalau
+kita mau bikin supaya tulisan kita dan
+keterangannya itu berpasangan, lalu
+pasangannya itu ngaturnya gampang, mau
+rata kiri, rata tengah, atau rata kanan,
+relatif terhadap huruf itu pakainya Ruby
+Align. Tuh, ini kayaknya enggak akan
+kita pakai ya. Ini contoh nih. Ini saya
+enggak tahu bahasa apa kayaknya Jepang
+ini ya. Misalnya yang di bawah apa
+mungkin kanji nih ya saya gak tahu juga
+nih yang atas mungkin hiragana misalnya
+ini kanjinya apa ini hiragananya apa
+sesimpel itu. Nah tapi dengan Ruby Align
+kita bisa bikin si tulisan ini maunya
+space around space between align start
+ke kiri center atau align end ada di
+kanan sama seperti kita pakai flexbox
+gitu. Nah ini cara nulis elemen HTML-nya
+kita pakai tag Ruby ya. Saya juga baru
+tahu ada tag namanya Ruby. Kalau mau
+bikin tulisan berpasangan nih Ruby. Nah,
+terus di dalamnya ada dua nih. RB untuk
+yang atasnya, RP untuk yang bawahnya.
+Nah, ini RB yang atasnya, Rp yang
+bawahnya. Ini jadi satu teks yang
+berpasangan. Nah, mau ngatur yang
+kecilnya ini rata ke mana? Kiri, kanan?
+Atau nyebar pakai Ruby
+Align gitu ya. Kalau butuh silakan
+teman-teman pakai. Berikutnya dan ini
+yang terakhir yang akan kita coba adalah
+paint order. Ini juga bagus nih. Saya
+juga baru tahu urutan bagaimana CSS
+menggambar font kita atau teks kita. Kan
+biasanya kalau teks tuh ada warna
+tulisannya, ada warna dari bordernya
+atau stroke-nya. Nih kita bisa pakai
+paint order untuk ngatur urutan fill dan
+stroke-nya. Kita coba ya. Kita close
+close sekarang kita buka ya. Ini yang
+paint order. Saya buka dua-duanya. Kita
+coba jalanin dulu ya. Jadi ceritanya
+saya punya dua buah tulisan yang sama
+nih kayak gini. Nanti saya ini mau bikin
+default yang ini kalau kita mau ubah
+urutannya. Jadi default-nya urutannya
+itu kita nulis dulu si fill-nya. F itu
+isinya baru ditimpa sama stroke-nya.
+Ditimpa sama garisnya. Nah, ini
+teman-teman lihat saya kasih dia text
+stroke untuk ngasih garis di luarnya.
+Nah, jadi yang ditulis tuh warnanya dulu
+warna putih baru ditimpa sama
+stroke-nya. Default-nya gitu. Sekarang
+kita bisa balik. Ini kan saya punya yang
+kedua nih. Ini ya saya kasih kelas paint
+order yang ini nih. Ini tuh paint order
+namanya. Yang atas enggak ada kelasnya.
+Nah, sekarang si paint order-nya saya
+mau kasih property paint
+order. Nah, default-nya kan tadi fill
+dulu baru stroke. Bacanya dari kiri ya.
+Jadi ditulis dulu warnanya atau digambar
+dulu warnanya baru ditimpa sama
+stroke-nya. Tuh enggak ada bedanya.
+Sekarang bisa kita balik. Jadi kita
+tulis dulu stroke-nya baru kita kasih F.
+Nah, jadi sekarang kayak gini tuh
+ketimpa di atasnya. Kalau kalian mau
+dapetin efek yang seperti ini, ini
+menurut saya bagus sih. Cuman hati-hati
+aja nih kayak huruf L dan I-nya jadi
+enggak bagus ya. Tapi standikanya bagus
+nih. Saya suka nih dia nempel. Ini
+kenapa bisa begini? Karena saya kasih
+letter spacing ya. Letter spacing-nya
+jadi dempet. Kalau kita kasih minus lagi
+itu makin dempet ya. makin dempet kita
+kasih 0,1 tapi kurang keren kan 0,1 ya
+kayak tadi tuh ini dia nempel begitu
+nempel karena yang digambar adalah
+stroke-nya dulu ketimpa sama warnanya
+tuh jadi bagus gini tuh ya jadi kalau
+kalian mau dapetin efek seperti ini
+silakan gunakan paint order itu dia. Nah
+ini sebetulnya ada yang terakhir dia
+nested declaration ini. Terus terang
+saya juga kurang paham ya, karena ini
+untuk mengatur bagaimana CSS kita saling
+bertumpuk satu sama lain ya. Mungkin
+kalau teman-teman ada yang sudah pernah
+coba boleh nanti sharing cara pakainya
+gimana di kolom komentar ya. Tapi itu
+dia beberapa fitur yang masuk ke dalam
+kategori developer experience di dalam
+CSS WAP 2024. Gimana menurut kalian?
+Mana fitur-fitur yang paling kalian suka
+dan mana kira-kira fitur yang pengin
+kalian bahas lebih lanjut? Silakan
+langsung aja tulis di kolom komentar ya.
+Jadi itu aja mungkin untuk video kali
+ini dan itu sekaligus juga mengakhiri
+seri kita membahas mengenai CSS rap
+2024. Mudah-mudahan teman-teman suka,
+mudah-mudahan teman-teman semakin
+tertarik buat ngulik CSS ya. Karena
+ternyata CSS itu sekarang udah sesakti
+itu ya. Enggak perlu menggunakan
+framework, enggak perlu menggunakan
+JavaScript, kita bisa gunakan CSS polos.
+Jadi jangan diremehkan ya CSS murni atau
+CSS vanila itu. Ya, itu aja sekali lagi
+mudah-mudahan bermanfaat. Kita akan
+ketemu lagi di video berikutnya. Terima
+kasih teman-teman sudah menonton. Saya
+Sandika Gali pamit dan seperti biasa
+jangan lupa titik omah.
+[Musik]
+[Musik]
+[Musik]
+[Musik]
+[Musik]
+[Musik]
+Allah
