@@ -24,15 +24,16 @@ cd youtube-subtitle-downloader
 ## struktur project
 ```bash
 youtube-subtitle-downloader/
-│
-├── main.py                      # Entry point CLI
-├── requirements.txt             # Dependensi
-├── README.md                    # Dokumentasi
-│
-├── utils/                       # Folder modul utama
-│   ├── __init__.py
-│   ├── video.py                 # Fungsi ekstrak ID & bahasa subtitle
-│   ├── subtitle.py              # Fungsi ambil & simpan subtitle
-│   └── feedback.py              # Tampilan progress/indikator
+├── README.md                 # Dokumentasi penggunaan project
+├── main.py                   # Entry point program (interaktif)
+├── requirements.txt          # Daftar dependensi Python
+├── .gitignore                # Mengatur file/folder yang diabaikan Git
+├── results/                  # Folder hasil subtitle (output)
+│   └── .gitkeep              # Placeholder agar folder tetap muncul di Git
+└── utils/                    # Folder berisi modul bantu (modular)
+    ├── __init__.py           # Penanda folder Python package
+    ├── feedback.py           # Indikator proses (spinner/loading)
+    ├── subtitle.py           # Fungsi ambil & simpan subtitle
+    └── video.py              # Fungsi bantu: parsing URL & bahasa
 
 ```
