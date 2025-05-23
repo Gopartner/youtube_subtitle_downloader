@@ -1,13 +1,12 @@
 import os
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
-from .video import get_available_languages
+from .video import get_available_languages, get_video_title
 
 def get_subtitles(video_id, language='id', output_file=None):
     try:
         transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
 
-        # Coba ambil subtitle sesuai permintaan
         try:
             transcript = transcript_list.find_transcript([language]).fetch()
         except:
@@ -15,32 +14,29 @@ def get_subtitles(video_id, language='id', output_file=None):
             generated = [t for t in transcript_list if t.is_generated]
             if generated:
                 transcript = generated[0].fetch()
-                if not transcript:
-                    raise Exception("Subtitle otomatis gagal diambil. Mungkin dibatasi oleh YouTube.")
+
+                if not transcript or len(transcript) == 0:
+                    raise Exception("Subtitle otomatis kosong. YouTube mungkin membatasi akses subtitle video ini.")
             else:
                 raise Exception("Tidak ada subtitle sama sekali.")
 
-        # Format subtitle ke teks biasa
+        # Cek ulang isi transcript sebelum diformat
+        if not transcript or len(transcript) == 0:
+            raise Exception("Subtitle ditemukan tapi kosong.")
+
         text = TextFormatter().format_transcript(transcript)
 
-        # Simpan ke file jika diminta
-        if output_file:
-            if not output_file.endswith(".txt"):
-                output_file += ".txt"
+        if output_file is None:
+            title = get_video_title(video_id)
+            output_file = f"{title.lower().replace(' ', '_')}_{language}.txt"
 
-            # Buat folder `results/` jika belum ada
-            os.makedirs("results", exist_ok=True)
+        os.makedirs("results", exist_ok=True)
+        output_path = os.path.join("results", output_file)
 
-            output_path = os.path.join("results", output_file)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(text)
 
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(text)
-
-            print(f"💾 Subtitle disimpan ke '{output_path}'")
-        else:
-            print("\n=== HASIL SUBTITLE ===\n")
-            print(text)
-
+        print(f"💾 Subtitle disimpan ke '{output_path}'")
         return True
 
     except Exception as e:
