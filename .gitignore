@@ -1,0 +1,21 @@
+# Jangan track folder cache Python
+__pycache__/
+*.py[cod]
+
+# Jangan track isi folder 'results', tapi tetap biarkan foldernya ada
+results/*
+!results/.gitkeep
+
+# Jangan track environment dan file editor
+.env
+*.env
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Jangan track file log atau output sementara
+*.log
+*.tmp
+*.bak
+
